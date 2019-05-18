@@ -1,5 +1,6 @@
 import React from 'react';
 import * as firebase from 'firebase/app';
+import AddFormComponent from '../AddFormComponent/AddFormComponent';
 
 export interface ElementTableComponentProps { }
 
@@ -163,6 +164,7 @@ export default class ElementTableComponent extends React.Component<ElementTableC
                         {rows}
                     </tbody>
                 </table>
+                <AddFormComponent />
             </div>
         );
     }

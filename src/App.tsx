@@ -7,9 +7,8 @@ import FooterComponent from './Components/FooterComponent/FooterComponent';
 import ElementTableComponent from './Components/ElementTableComponent/ElementTableComponent';
 import HeaderLeftComponent from './Components/HeaderLeftComponent/HeaderLeftComponent';
 import HeaderRightComponent from './Components/HeaderRightComponent/HeaderRightComponent';
-import AddFromComponent from './Components/AddFormComponent/AddFormComponent';
 import LandingHeaderComponent from './Components/LandingHeaderComponent/LandingHeaderComponent';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 export default class App extends React.Component<any, any> {
     render() {
@@ -23,10 +22,6 @@ export default class App extends React.Component<any, any> {
                     <Route exact path="/" component={LandingHeaderComponent} />
                     <Route exact path="/" component={LandingPageComponent} />
                     <Route path="/element" component={ElementTableComponent} />
-                    {/* <LandingHeaderComponent />
-                    <LandingPageComponent /> */}
-                    {/* <ElementTableComponent /> */}
-                    {/* <AddFromComponent /> */}
                     <FooterComponent />
                 </div>
             </Router>
