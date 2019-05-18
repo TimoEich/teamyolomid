@@ -9,6 +9,8 @@
     transition: background-color 0.5s;
     font-family: Montserrat-Light;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #EFEEEE;
 
     &:hover {
         cursor: pointer;
@@ -22,8 +24,4 @@
         font-family: Montserrat-Black;
     }
 
-    a {
-        text-decoration: none;
-        color: #EFEEEE;
-    }
 }

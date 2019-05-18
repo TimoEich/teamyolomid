@@ -9,21 +9,27 @@ import HeaderLeftComponent from './Components/HeaderLeftComponent/HeaderLeftComp
 import HeaderRightComponent from './Components/HeaderRightComponent/HeaderRightComponent';
 import AddFromComponent from './Components/AddFormComponent/AddFormComponent';
 import LandingHeaderComponent from './Components/LandingHeaderComponent/LandingHeaderComponent';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-const App: React.FC = () => {
-    return (
-        <div className="app-container">
-            <LogoComponent />
-            <NaviComponent />
-            <HeaderLeftComponent />
-            <HeaderRightComponent />
-            {/* <LandingHeaderComponent /> */}
-            {/* <LandingPageComponent /> */}
-            {/* <ElementTableComponent /> */}
-            <AddFromComponent />
-            <FooterComponent />
-        </div>
-    );
+export default class App extends React.Component<any, any> {
+    render() {
+        return (
+            <Router>
+                <div className="app-container">
+                    <LogoComponent />
+                    <NaviComponent />
+                    <HeaderLeftComponent />
+                    <HeaderRightComponent />
+                    <Route exact path="/" component={LandingHeaderComponent} />
+                    <Route exact path="/" component={LandingPageComponent} />
+                    <Route path="/element" component={ElementTableComponent} />
+                    {/* <LandingHeaderComponent />
+                    <LandingPageComponent /> */}
+                    {/* <ElementTableComponent /> */}
+                    {/* <AddFromComponent /> */}
+                    <FooterComponent />
+                </div>
+            </Router>
+        );
+    }
 }
-
-export default App;
