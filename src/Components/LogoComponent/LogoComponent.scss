@@ -1,0 +1,28 @@
+.tym-logo {
+    font-size: 3vmin;
+    color: #EF4648;
+    text-transform: uppercase;
+}
+
+.yolo-style {
+    font-size: 4vmin;
+    color: #EFEEEE;
+
+    &:hover {
+        color: #fff;
+        -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+        -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+        animation: neon1 1.5s ease-in-out infinite alternate;
+        cursor: pointer;
+    }
+}
+
+@keyframes neon1 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #EF4648, 0 0 70px #EF4648, 0 0 80px #EF4648, 0 0 100px #EF4648, 0 0 150px #EF4648;
+    }
+
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #EF4648, 0 0 35px #EF4648, 0 0 40px #EF4648, 0 0 50px #EF4648, 0 0 75px #EF4648;
+    }
+}

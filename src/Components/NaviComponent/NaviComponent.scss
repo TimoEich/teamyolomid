@@ -1,0 +1,29 @@
+.nav-button {
+    display: flex;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    width: 20vh;
+    font-size: 1.7vmin;
+    transition: background-color 0.5s;
+    font-family: Montserrat-Light;
+    text-transform: uppercase;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #EF4648;
+        font-family: Montserrat-Black;
+
+    }
+
+    &:active {
+        background-color: brown;
+        font-family: Montserrat-Black;
+    }
+
+    a {
+        text-decoration: none;
+        color: #EFEEEE;
+    }
+}

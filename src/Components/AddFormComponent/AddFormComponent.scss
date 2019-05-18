@@ -1,0 +1,121 @@
+// * {
+//     box-sizing: border-box;
+// }
+
+form {
+    margin-top: 5vh;
+    display: table;
+    align-items: center;
+    width: 30vw;
+    height: 60vh;
+    background-color: #2A363B;
+    text-align: center;
+    border: 0.5vmin solid #EF4648;
+}
+
+.input-container {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.input-field {
+    width: 20vw;
+    padding: 10px;
+    outline: none;
+}
+
+.icon {
+    padding: 10px;
+    background: #EF4648;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.yolo-style {
+    font-size: 5vmin;
+    color: #EFEEEE;
+
+    &:hover {
+        color: #fff;
+        -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+        -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+        animation: neon1 1.5s ease-in-out infinite alternate;
+        cursor: pointer;
+    }
+}
+
+.form-title {
+    font-size: 4vmin;
+    color: #EF4648;
+    text-transform: uppercase;
+    margin: 3vh;
+}
+
+.select-style {
+    width: 21.3vw;
+}
+
+.input-container-elements {
+    text-align: left;
+    margin-left: 2.3vw;
+    font-size: 2vmin;
+    font-family: Montserrat-Regular;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    font-family: Montserrat-Bold;
+}
+
+.submit-button {
+    background-color: #8cad2d;
+    width: 42.5%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EFEEEE;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.cancle-button {
+    background-color: #EF4648;
+    width: 42.5%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #EFEEEE;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+input[type="checkbox"]+label::before {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    border: 2px solid #8cad2d;
+    background-color: #fff;
+    display: block;
+    content: "";
+    float: left;
+    margin-right: 5px;
+}
+
+input[type="checkbox"]:checked+label::before {
+    box-shadow: inset 0px 0px 0px 3px #fff;
+    background-color: #8cad2d;
+}

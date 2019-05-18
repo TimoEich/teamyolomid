@@ -1,0 +1,59 @@
+.page-title-wrapper-right {
+    width: 17.3vw;
+    height: 10vh;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background-color: #2A363B;
+    padding: 1vh;
+    border-left: 3vh solid #EF4648;
+}
+
+.page-title-wrapper-title {
+    font-family: Montserrat-Bold;
+    font-size: 2vh;
+    color: #EF4648;
+}
+
+.page-title-wrapper-text {
+    font-family: Roboto-Regular;
+    font-size: 1.5vh;
+    color: #EFEEEE;
+
+    span {
+        font-family: Roboto-Bold;
+    }
+
+    table {
+        border: none;
+    }
+}
+
+.add-button {
+    font-size: 2vh;
+    height: 4vh;
+    width: 10%;
+    font-family: Montserrat-Regular;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: font-family 0.5s;
+    background-color: #EF4648;
+
+    &:hover {
+        font-family: Montserrat-Bold;
+        cursor: pointer;
+    }
+}
+
+.reward-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EF4648;
+    width: 4.3vw;
+    height: 2.5vh;
+
+    &:hover {
+        cursor: pointer;
+        font-family: Montserrat-Bold;
+    }
+}

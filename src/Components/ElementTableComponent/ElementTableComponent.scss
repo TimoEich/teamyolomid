@@ -1,0 +1,60 @@
+.table-main {
+    margin: auto;
+    border: none;
+    border-collapse: collapse;
+    width: 70%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+    th {
+        height: 4vh;
+        text-transform: uppercase;
+        font-size: 2vh;
+        color: #EF4648;
+        font-family: Montserrat-Bold;
+        border-bottom: 3px solid #EF4648;
+    }
+
+    td {
+        height: 3.5vh;
+        text-align: left;
+    }
+
+    tr {
+        border-bottom: 1px solid #C1C3D1;
+        transition: background-color 0.5s, color 0.5s;
+        color: #2A363B;
+        font-family: Roboto-Bold;
+        font-size: 1.5vh;
+    }
+
+    tr:hover {
+        background-color: #2A363B;
+        color: #EFEEEE;
+    }
+}
+
+.table-header {
+    text-align: left;
+    background-color: #2A363B;
+    color: #ffffff;
+}
+
+.td-difficulty-style {
+    text-transform: uppercase;
+}
+
+.td-name-style {
+    padding-left: 2vh;
+}
+
+.ele-th-name {
+    padding-left: 2vh;
+}
+
+.fas {
+    font-size: 2.5vh;
+}
+
+.score-style {
+    font-size: 2vh;
+}

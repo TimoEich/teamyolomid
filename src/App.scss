@@ -1,0 +1,89 @@
+.app-container {
+    font-family: Montserrat-Black;
+    font-size: calc(10px + 2vmin);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 5vh 15vh 77vh 3vh;
+    grid-template-areas:
+        "logoarea    naviarea    naviarea     naviarea"
+        "header-left header-left header-right header-right"
+        "mainarea    mainarea    mainarea     mainarea"
+        "footerarea  footerarea  footerarea   footerarea";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.logo-wrapper {
+    grid-area: logoarea;
+    background-color: #2A363B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navi-wrapper {
+    grid-area: naviarea;
+    background-color: #2A363B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-header-wrapper {
+    grid-area: 2 / 1 / span 1 / span 4;
+    border-top: 0.3vh solid #EF4648;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-left-wrapper {
+    grid-area: header-left;
+    width: 100%;
+    border-top: 0.3vh solid #EF4648;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right-wrapper {
+    grid-area: header-right;
+    width: 100%;
+    border-top: 0.3vh solid #EF4648;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper {
+    grid-area: mainarea;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    border-top: 0.3vh solid #EF4648;
+}
+
+.eletable-wrapper {
+    grid-area: mainarea;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+
+.form-wrapper {
+    grid-area: mainarea;
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    border-top: 0.3vh solid #EF4648;
+}
+
+.footer-wrapper {
+    text-align: center;
+    grid-area: footerarea;
+    background-color: #2A363B;
+    border-top: 0.3vh solid #EF4648;
+}

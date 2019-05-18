@@ -1,0 +1,26 @@
+.page-title-wrapper-left {
+    width: 17.3vw;
+    height: 10vh;
+    background-color: #2A363B; // #EFC958, #2A363B
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding: 1vh;
+    text-align: left;
+    border-left: 3vh solid #EF4648;
+}
+
+.page-title-wrapper-title {
+    font-family: Montserrat-Bold;
+    font-size: 2vmin;
+    color: #EF4648;
+}
+
+.page-title-wrapper-text {
+    font-family: Roboto-Regular;
+    font-size: 1.5vmin;
+    color: #EFEEEE;
+}
+
+.td-text-style {
+    font-size: 2.5vmin;
+    color: #EFEEEE;
+}

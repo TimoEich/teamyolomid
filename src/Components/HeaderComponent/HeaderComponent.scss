@@ -1,0 +1,8 @@
+.header-wrapper {
+    grid-area: logoarea;
+    background-color: #282c34;
+    display: grid;
+    grid-template-columns: 100px auto 100 100;
+    grid-template-areas:
+        "logoarea headerarea headerarea headerarea";
+}
