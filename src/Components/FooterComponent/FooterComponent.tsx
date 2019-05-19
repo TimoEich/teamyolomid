@@ -9,7 +9,7 @@ export default class FooterComponent extends React.Component<FooterComponentProp
     render() {
         return (
             <div className="footer-wrapper">
-                <span className="footer-text">Created with blood, sweat and tears. 2019 Jey</span>
+                <div className="footer-text">Created with blood, sweat and tears. 2019 Jey</div>
             </div>
         );
     }
