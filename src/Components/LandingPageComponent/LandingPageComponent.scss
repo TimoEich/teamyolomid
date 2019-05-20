@@ -21,4 +21,57 @@
     font-family: Roboto-Regular;
     font-size: 2vmin;
     color: #EFEEEE;
+    margin-bottom: 4vh;
+}
+
+.welcome-wrapper {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    height: 40%;
+
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+        "welcome1 welcome2 welcome3"
+}
+
+.small-welcome-wrapper1 {
+    grid-area: welcome1;
+    padding: 2vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    text-transform: uppercase;
+}
+
+.small-welcome-wrapper2 {
+    grid-area: welcome2;
+    padding: 2vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    text-transform: uppercase;
+}
+
+.small-welcome-wrapper3 {
+    grid-area: welcome3;
+    padding: 2vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    text-transform: uppercase;
+}
+
+.small-welcome-header-text {
+    font-family: Montserrat-Bold;
+    font-size: 3vmin;
+    color: #EF4648;
+}
+
+.small-welcome-normal-text {
+    font-family: Roboto-Regular;
+    font-size: 1.5vh;
+    color: #EFEEEE;
+}
+
+.small-welcome-big-letter {
+    font-size: 4vmin;
+    color: #EFEEEE;
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import * as firebase from 'firebase/app';
 import AddFormComponent from '../AddFormComponent/AddFormComponent';
-import { Svg, Defs, Rect, ClipPath, G, Text, Polygon } from "react-native-svg";
 
 export interface ElementTableComponentProps {
 
@@ -24,6 +23,21 @@ export default class ElementTableComponent extends React.Component<ElementTableC
 
     readData() {
         firebase.firestore().collection("eletd").get().then((snapshot: any) => {
+            snapshot.forEach((doc: any) => {
+                let cell: any = []
+                var name = doc.data()["name"];
+                var date = new Date(parseInt(doc.data()["date"])).toLocaleDateString();
+                var elements = this.buildIcons(doc.data()["elements"]);
+                var difficulty = doc.data()["difficulty"];
+                var score = doc.data()["score"];
+
+                cell.push(<td className="td-name-style">{name}</td>);
+                cell.push(<td>{date}</td>);
+                cell.push(<td className="td-elements-style">{elements}</td>);
+                cell.push(<td className="td-difficulty-style">{difficulty}</td>);
+                cell.push(<td className="score-style">{score}</td>);
+                this.rows.push(<tr>{cell}</tr>);
+            });
             this.setState({
                 data: snapshot,
             })
@@ -139,24 +153,6 @@ export default class ElementTableComponent extends React.Component<ElementTableC
     }
 
     render() {
-        let rows: any = [];
-        this.state.data.forEach((doc: any) => {
-            let cell: any = []
-            var name = doc.data()["name"];
-            var date = new Date(parseInt(doc.data()["date"])).toLocaleDateString();
-            var elements = this.buildIcons(doc.data()["elements"]);
-            var difficulty = doc.data()["difficulty"];
-            var score = doc.data()["score"];
-
-            cell.push(<td className="td-name-style">{name}</td>);
-            cell.push(<td>{date}</td>);
-            cell.push(<td className="td-elements-style">{elements}</td>);
-            cell.push(<td className="td-difficulty-style">{difficulty}</td>);
-            cell.push(<td className="score-style">{score}</td>);
-            rows.push(<tr>{cell}</tr>);
-        });
-
-
         return (
             <div className="eletable-wrapper" >
                 <table className="table-main">
@@ -170,7 +166,7 @@ export default class ElementTableComponent extends React.Component<ElementTableC
                         </tr>
                     </thead>
                     <tbody>
-                        {rows}
+                        {this.rows}
                     </tbody>
                 </table>
                 <AddFormComponent />
