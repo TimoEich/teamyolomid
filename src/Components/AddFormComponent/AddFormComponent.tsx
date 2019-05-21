@@ -120,10 +120,10 @@ export default class AddFormComponent extends React.Component<AddFormComponentPr
                     <input className="input-field" type="text" name="score" placeholder="Score" onChange={this.updateInput} value={this.state.score} />
                 </div>
 
-                <div className="input-container">
+                {/* <div className="input-container">
                     <i className="far fa-calendar-alt icon" />
                     <input className="input-field" type="date" name="date" placeholder="" onChange={this.updateInput} value={this.state.date} />
-                </div>
+                </div> */}
 
                 <div className="input-container">
                     <i className="fas fa-skull-crossbones icon" />
@@ -137,12 +137,12 @@ export default class AddFormComponent extends React.Component<AddFormComponentPr
 
                 <div className="input-container-elements">
                     <table>
-                        <ElementCheckBoxComponent eleIcon="fas fa-gem" eleName="Earth" name="earth" value="earth" onChange={this.handleEleLevel} />
-                        <ElementCheckBoxComponent eleIcon="fas fa-moon" eleName="Darkness" name="darkness" value="darkness" onChange={this.handleEleLevel} />
-                        <ElementCheckBoxComponent eleIcon="fas fa-fire" eleName="Fire" name="fire" value="fire" onChange={this.handleEleLevel} />
-                        <ElementCheckBoxComponent eleIcon="fas fa-tint ele-icon" eleName="Water" name="water" value="water" onChange={this.handleEleLevel} />
-                        <ElementCheckBoxComponent eleIcon="fas fa-sun" eleName="Light" name="light" value="light" onChange={this.handleEleLevel} />
-                        <ElementCheckBoxComponent eleIcon="fas fa-leaf" eleName="Nature" name="nature" value="nature" onChange={this.handleEleLevel} />
+                        <ElementCheckBoxComponent eleIcon="fas fa-fire fire-color" eleName="Fire" name="fire" value="fire" onChange={this.handleEleLevel} />
+                        <ElementCheckBoxComponent eleIcon="fas fa-tint water-color" eleName="Water" name="water" value="water" onChange={this.handleEleLevel} />
+                        <ElementCheckBoxComponent eleIcon="fas fa-sun light-color" eleName="Light" name="light" value="light" onChange={this.handleEleLevel} />
+                        <ElementCheckBoxComponent eleIcon="fas fa-moon darkness-color" eleName="Darkness" name="darkness" value="darkness" onChange={this.handleEleLevel} />
+                        <ElementCheckBoxComponent eleIcon="fas fa-gem earth-color" eleName="Earth" name="earth" value="earth" onChange={this.handleEleLevel} />
+                        <ElementCheckBoxComponent eleIcon="fas fa-leaf nature-color" eleName="Nature" name="nature" value="nature" onChange={this.handleEleLevel} />
                     </table>
                 </div>
 

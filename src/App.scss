@@ -1,6 +1,12 @@
-.app-container {
-    padding: 0;
+body {
+    height: 100vh;
     margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
     font-family: Montserrat-Black;
     font-size: calc(10px + 2vmin);
     display: grid;

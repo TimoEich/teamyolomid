@@ -1,13 +1,21 @@
 import React from 'react';
 
-export interface HeaderRightComponentProps { }
+export interface HeaderRightComponentProps {
+}
 
-export interface HeaderRightComponentState { }
+export interface HeaderRightComponentState {
+}
 
 export default class HeaderRightComponent extends React.Component<HeaderRightComponentProps, HeaderRightComponentState> {
+    constructor(props: HeaderRightComponentProps) {
+        super(props);
+        this.state = {
+            latestWinner: "",
+        }
+    }
 
     render() {
-
+        var latestWinner: string = "Flefffffff";
         return (
             <div className="header-right-wrapper">
                 <div className="page-title-wrapper-right">
@@ -31,7 +39,7 @@ export default class HeaderRightComponent extends React.Component<HeaderRightCom
                                 </tr>
                                 <tr>
                                     <td><span>Last Winner</span></td>
-                                    <td>Flef</td>
+                                    <td>{latestWinner}</td>
                                 </tr>
                             </tbody>
                         </table>

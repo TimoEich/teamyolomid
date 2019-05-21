@@ -1,13 +1,9 @@
-// * {
-//     box-sizing: border-box;
-// }
-
 form {
     margin-top: 5vh;
     display: table;
     align-items: center;
     width: 30vw;
-    height: 70vh;
+    height: 65vh;
     background-color: #2A363B;
     text-align: center;
     border: 0.5vmin solid #EF4648;
@@ -82,6 +78,9 @@ form {
     justify-content: center;
     align-items: center;
     color: #EFEEEE;
+    border: none;
+    font-family: Montserrat-Bold;
+    font-size: 2.5vmin;
 
     &:hover {
         cursor: pointer;
@@ -96,6 +95,8 @@ form {
     justify-content: center;
     align-items: center;
     color: #EFEEEE;
+    font-family: Montserrat-Bold;
+    font-size: 2.5vmin;
 
     &:hover {
         cursor: pointer;

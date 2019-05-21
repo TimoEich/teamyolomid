@@ -1,3 +1,5 @@
+// GLOBAL IMPORTS
+
 @import './Components/HeaderComponent/HeaderComponent.scss';
 @import './Components/LandingPageComponent/LandingPageComponent.scss';
 @import './Components/ElementTableComponent/ElementTableComponent.scss';
@@ -9,6 +11,25 @@
 @import './Components/AddFormComponent/AddFormComponent.scss';
 @import './Components/LandingHeaderComponent/LandingHeaderComponent.scss';
 @import './Components/ElementCheckBoxComponent/ElementCheckBoxComponent.scss';
+
+
+
+// GLOBAL COLOR VARIABLES
+
+$main-color-red: #FF0000;
+$main-color-white: #EFEEEE;
+$main-color-grey: #2A363B;
+
+$element-color-fire: #F44336;
+$element-color-nature: #4CAF50;
+$element-color-light: #FFEB3B;
+$element-color-earth: #795548;
+$element-color-darkness: #9C27B0;
+$element-color-water: #2196F3;
+
+
+
+// GLOBAL FONTS
 
 @font-face {
     font-family: 'Montserrat-Black';
@@ -50,10 +71,30 @@
     src: url('./fonts/Roboto-Bold.ttf') format('truetype');
 }
 
-body {
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+
+
+// GLOBAL CLASSES
+
+.fire-color {
+    color: $element-color-fire;
+}
+
+.water-color {
+    color: $element-color-water;
+}
+
+.earth-color {
+    color: $element-color-earth;
+}
+
+.light-color {
+    color: $element-color-light;
+}
+
+.nature-color {
+    color: $element-color-nature;
+}
+
+.darkness-color {
+    color: $element-color-darkness;
 }
